@@ -1,4 +1,0 @@
-start=1005.161792
-pause=yes
-volume=65.000000
-af=acompressor=ratio=4,loudnorm,@acompressor:acompressor=release=250:threshold=-25dB:ratio=3:knee=2dB:makeup=8dB:attack=20
