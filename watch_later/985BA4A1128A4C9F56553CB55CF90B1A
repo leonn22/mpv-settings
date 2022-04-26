@@ -1,0 +1,3 @@
+start=0.917000
+volume=75.000000
+af=acompressor=ratio=4,loudnorm,@acompressor:acompressor=knee=2dB:makeup=8dB:attack=20:release=250:threshold=-25dB:ratio=3

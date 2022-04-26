@@ -1,0 +1,4 @@
+start=1617.078000
+pause=yes
+volume=70.000000
+af=acompressor=ratio=4,loudnorm,@acompressor:acompressor=ratio=3:knee=2dB:makeup=8dB:release=250:threshold=-25dB:attack=20
