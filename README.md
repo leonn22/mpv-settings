@@ -6,11 +6,11 @@ A compiliation of mpv configurations i could find on the internet made over @Tsu
 |**Key|Action**|
 |-|-|
 | s |screenshot with subs | 
-| S |screenshot with subs | 
-| scroll up | volume   5 |
-| scroll down | volume  -5 |
-| Ctrl + Right | skip 85s ahead |
-| Ctrl + Left | backs 85s ahead |
+| Shift + S |screenshot with subs | 
+| Scroll up | volume   5 |
+| Scroll down | volume  -5 |
+| ctrl + right | skip 85s ahead |
+| ctrl + left | backs 85s ahead |
 
 ## Installation
 ```
