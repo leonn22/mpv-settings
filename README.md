@@ -3,14 +3,14 @@
 A compiliation of mpv configurations i could find on the internet made over @Tsubajashi [configurations](https://github.com/Tsubajashi/mpv-settings)
 
 ## Frequently used keybinds
-|Key|Action|
+|**Key|Action**|
 |-|-|
 | s |screenshot with subs | 
 | S |screenshot with subs | 
-| WHEEL_UP | volume   5 |
-| WHEEL_DOWN | volume  -5 |
-| Ctrl+RIGHT | skip 85s ahead |
-| Ctrl+LEFT | backs 85s ahead |
+| scroll up | volume   5 |
+| scroll down | volume  -5 |
+| Ctrl + Right | skip 85s ahead |
+| Ctrl + Left | backs 85s ahead |
 
 ## Installation
 ```
