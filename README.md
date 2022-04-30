@@ -3,7 +3,7 @@
 A compiliation of mpv configurations i could find on the internet made over @Tsubajashi [configurations](https://github.com/Tsubajashi/mpv-settings)
 
 ## Frequently used keybinds
-|**Key|Action**|
+|**Key**|**Action**|
 |-|-|
 | s |screenshot with subs | 
 | Shift + S |screenshot with subs | 
