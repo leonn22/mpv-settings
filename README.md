@@ -23,6 +23,7 @@ A compiliation of mpv configurations i could find on the internet made over @Tsu
 | autoload | loads next file |
 | betterchapters | ?? |
 | seek-to | volume  -5 |
+| chapterskip | skips op,ed |
 </center>
 
 
