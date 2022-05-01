@@ -2,8 +2,7 @@
 
 A compiliation of mpv configurations i could find on the internet made over @Tsubajashi [configurations](https://github.com/Tsubajashi/mpv-settings)
 
-## frequently used keybinds
-<center>
+## Frequently used keybinds
 | Key | Action |
 | - | - |
 | s |screenshot with subs | 
@@ -13,10 +12,8 @@ A compiliation of mpv configurations i could find on the internet made over @Tsu
 | Scroll down | volume  -5 |
 | ctrl + right | skip 85s ahead |
 | ctrl + left | backs 85s ahead |
-</center>
 
-## scripts used
-<center>
+## Scripts used
 | Scripts | description  |
 | - | - |
 | acompressor |Audio compressor | 
@@ -24,8 +21,6 @@ A compiliation of mpv configurations i could find on the internet made over @Tsu
 | betterchapters | ?? |
 | seek-to | volume  -5 |
 | chapterskip | skips op,ed |
-</center>
-
 
 ## Installation
 ```
