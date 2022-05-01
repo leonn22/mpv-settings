@@ -6,10 +6,10 @@ A compiliation of mpv configurations i could find on the internet made over @Tsu
 | Key | Action |
 | - | - |
 | s |screenshot with subs | 
-| Shift + S |screenshot without subs |
+| S |screenshot without subs |
 | Scroll up | volume   5 |
-| t | seek to specific time | 
 | Scroll down | volume  -5 |
+| t | seek to specific time | 
 | ctrl + right | skip 85s ahead |
 | ctrl + left | backs 85s ahead |
 
