@@ -8,7 +8,7 @@ local categories = {
     prologue = "^Prologue/^Intro",
     opening = "^OP/ OP$/^Opening",
     ending = "^ED/ ED$/^Ending",
-    preview = "Preview$"
+    preview = "Preview$",
     credits = "^[Cc]redits/[Cc]redits$",
 }
 
@@ -16,7 +16,7 @@ local options = {
     enabled = true,
     skip_once = true,
     categories = "",
-    skip = "opening";"ending"
+    skip = "",
 }
 
 mp.options = require "mp.options"

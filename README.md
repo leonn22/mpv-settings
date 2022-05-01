@@ -7,7 +7,7 @@ A compiliation of mpv configurations i could find on the internet made over @Tsu
 | Key |  |
 | :---: | :---:|
 | s |screenshot with subs | 
-| Shift + S |screenshot with subs |
+| Shift + S |screenshot without subs |
 | Scroll up | volume   5 |
 | t | seek to specific time | 
 | Scroll down | volume  -5 |
