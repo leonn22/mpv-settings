@@ -4,8 +4,8 @@ A compiliation of mpv configurations i could find on the internet made over @Tsu
 
 ## frequently used keybinds
 <center>
-| Key |  |
-| :---: | :---:|
+| Key | Action |
+| - | - |
 | s |screenshot with subs | 
 | Shift + S |screenshot without subs |
 | Scroll up | volume   5 |
@@ -17,8 +17,8 @@ A compiliation of mpv configurations i could find on the internet made over @Tsu
 
 ## scripts used
 <center>
-| Scripts |   |
-| :---: | :---:|
+| Scripts | description  |
+| - | - |
 | acompressor |Audio compressor | 
 | autoload | loads next file |
 | betterchapters | ?? |
