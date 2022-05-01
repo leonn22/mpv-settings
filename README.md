@@ -2,9 +2,9 @@
 
 A compiliation of mpv configurations i could find on the internet made over @Tsubajashi [configurations](https://github.com/Tsubajashi/mpv-settings)
 
-## Frequently used keybinds
+## frequently used keybinds
 <center>
-| Key | Action |
+| Key |  |
 | :---: | :---:|
 | s |screenshot with subs | 
 | Shift + S |screenshot with subs |
@@ -14,6 +14,17 @@ A compiliation of mpv configurations i could find on the internet made over @Tsu
 | ctrl + right | skip 85s ahead |
 | ctrl + left | backs 85s ahead |
 </center>
+
+## scripts used
+<center>
+| Scripts |   |
+| :---: | :---:|
+| acompressor |Audio compressor | 
+| autoload | loads next file |
+| betterchapters | ?? |
+| seek-to | volume  -5 |
+</center>
+
 
 ## Installation
 ```
