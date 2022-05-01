@@ -1,27 +1,86 @@
 -- chapterskip.lua
+--
 -- Ain't Nobody Got Time for That
+-- Add category in line 7 & skip by default in line 19
+-- This script skips chapters based on their title.
 
-require 'mp.options'
-local opt = {
-    patterns = {
-        "OP","[Oo]pening$", "^[Oo]pening:", "[Oo]pening [Cc]redits",
-        "ED","[Ee]nding$", "^[Ee]nding:", "[Ee]nding [Cc]redits",
-        "[Pp]review$",
-    },
+local categories = {
+    prologue = "^Prologue/^Intro",
+    opening = "^OP/ OP$/^Opening",
+    ending = "^ED/ ED$/^Ending",
+    preview = "Preview$"
+    credits = "^[Cc]redits/[Cc]redits$",
 }
-read_options(opt)
 
-function check_chapter(_, chapter)
-    if not chapter then
-        return
-    end
-    for _, p in pairs(opt.patterns) do
-        if string.match(chapter, p) then
-            print("Skipping chapter:", chapter)
-            mp.command("no-osd add chapter 1")
-            return
+local options = {
+    enabled = true,
+    skip_once = true,
+    categories = "",
+    skip = "opening";"ending"
+}
+
+mp.options = require "mp.options"
+
+function matches(i, title)
+    for category in string.gmatch(options.skip, " *([^;]*[^; ]) *") do
+        if categories[category:lower()] then
+            if string.find(category:lower(), "^idx%-") == nil then
+                if title then
+                    for pattern in string.gmatch(categories[category:lower()], "([^/]+)") do
+                        if string.match(title, pattern) then
+                            return true
+                        end
+                    end
+                end
+            else
+                for pattern in string.gmatch(categories[category:lower()], "([^/]+)") do
+                    if tonumber(pattern) == i then
+                        return true
+                    end
+                end
+            end
         end
     end
 end
 
-mp.observe_property("chapter-metadata/by-key/title", "string", check_chapter)
+local skipped = {}
+local parsed = {}
+
+function chapterskip(_, current)
+    mp.options.read_options(options, "chapterskip")
+    if not options.enabled then return end
+    for category in string.gmatch(options.categories, "([^;]+)") do
+        name, patterns = string.match(category, " *([^+>]*[^+> ]) *[+>](.*)")
+        if name then
+            categories[name:lower()] = patterns
+        elseif not parsed[category] then
+            mp.msg.warn("Improper category definition: " .. category)
+        end
+        parsed[category] = true
+    end
+    local chapters = mp.get_property_native("chapter-list")
+    local skip = false
+    for i, chapter in ipairs(chapters) do
+        if (not options.skip_once or not skipped[i]) and matches(i, chapter.title) then
+            if i == current + 1 or skip == i - 1 then
+                if skip then
+                    skipped[skip] = true
+                end
+                skip = i
+            end
+        elseif skip then
+            mp.set_property("time-pos", chapter.time)
+            skipped[skip] = true
+            return
+        end
+    end
+    if skip then
+        if mp.get_property_native("playlist-count") == mp.get_property_native("playlist-pos-1") then
+            return mp.set_property("time-pos", mp.get_property_native("duration"))
+        end
+        mp.commandv("playlist-next")
+    end
+end
+
+mp.observe_property("chapter", "number", chapterskip)
+mp.register_event("file-loaded", function() skipped = {} end)
