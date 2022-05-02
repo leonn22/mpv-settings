@@ -27,7 +27,7 @@ Clone this repo to
 ```
 C:\Users\%username%\AppData\Roaming\mpv
 ```
-## <u>Resources</u>
+## <u>Resources<\u>
 - [iamscum](https://iamscum.wordpress.com/guides/videoplayback-guide/mpv-conf/)
 - [GUI build](https://sourceforge.net/projects/mpv-player-windows/files/)
 - [User Scripts](https://github.com/mpv-player/mpv/wiki/User-Scripts)
