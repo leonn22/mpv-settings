@@ -4,7 +4,7 @@ A compiliation of mpv configurations i could find on the internet made over @Tsu
 
 ## Frequently used keybinds
 | Key | Action |
-| - | - |
+| :-: | :-: |
 | s |screenshot with subs | 
 | S |screenshot without subs |
 | Scroll up | volume   5 |
@@ -23,8 +23,12 @@ A compiliation of mpv configurations i could find on the internet made over @Tsu
 | seek-to | volume  -5 |
 
 ## Installation
+Clone this repo to
 ```
 C:\Users\%username%\AppData\Roaming\mpv
 ```
-## Credits
+## Resources:
 - [iamscum](https://iamscum.wordpress.com/guides/videoplayback-guide/mpv-conf/)
+- [GUI build](https://sourceforge.net/projects/mpv-player-windows/files/)
+- [User Scripts](https://github.com/mpv-player/mpv/wiki/User-Scripts)
+- [The Manual](https://mpv.io/manual/master/)
