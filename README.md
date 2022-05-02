@@ -7,6 +7,7 @@ A compiliation of mpv configurations i could find on the internet made over @Tsu
 | :-: | :-: |
 | s |screenshot with subs | 
 | S |screenshot without subs |
+| b |boss key |
 | Scroll up | volume   5 |
 | Scroll down | volume  -5 |
 | t | seek to specific time | 
@@ -14,7 +15,6 @@ A compiliation of mpv configurations i could find on the internet made over @Tsu
 | ctrl + left | backs 85s ahead |
 
 ## Scripts used
-
 | Scripts | description  |
 | - | - |
 | acompressor |Audio compressor | 
