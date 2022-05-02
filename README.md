@@ -13,13 +13,13 @@ A compiliation of mpv configurations i could find on the internet made over @Tsu
 | ctrl + right | skip 85s ahead |
 | ctrl + left | backs 85s ahead |
 
-## scripts used
+## Scripts used
 
 | Scripts | description  |
 | - | - |
 | acompressor |Audio compressor | 
 | autoload | loads next file |
-| betterchapters | ?? |
+| betterchapters | just better chapters |
 | seek-to | volume  -5 |
 
 ## Installation
