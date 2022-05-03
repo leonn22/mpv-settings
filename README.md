@@ -32,5 +32,5 @@ C:\Users\%username%\AppData\Roaming\mpv
 - [iamscum Guide](https://iamscum.wordpress.com/guides/videoplayback-guide/mpv-conf/)
 - [GUI build](https://sourceforge.net/projects/mpv-player-windows/files/)
 - [User Scripts](https://github.com/mpv-player/mpv/wiki/User-Scripts)
-- [The Manual](https://mpv.io/manual/master/)
+- [mpv Manual](https://mpv.io/manual/master/)
 - [Source Sans Pro Font](https://fonts.google.com/specimen/Source+Sans+Pro)
