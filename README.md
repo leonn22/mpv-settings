@@ -1,6 +1,6 @@
 # Overview
 - A compiliation of mpv configurations i could find on the internet made over @Tsubajashi [configurations](https://github.com/Tsubajashi/mpv-settings)
-- Use [this]([url](https://github.com/leonn22/mpv-settings/tree/low-spec)) for low-spec/old computers
+- Use [this](https://github.com/leonn22/mpv-settings/tree/low-spec) for low-spec/old computers
 
 ## Installation
 Clone this repo to
